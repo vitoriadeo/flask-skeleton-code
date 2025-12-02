@@ -4,9 +4,15 @@ Este repositório serve como um ponto de partida para projetos Flask. Ele já ve
 
 Embora seja um projeto inicial, ele foi desenhado para ser escalável e fácil de manter.
 
+### Sobre este projeto
+
+> Este repositório foi desenvolvido como um laboratório de estudo para dissecar e compreender a arquitetura do Flask em profundidade. O objetivo principal não é apenas ter uma estrutura para clonar, mas dominar o fluxo de dados, o ciclo de vida da aplicação e a interdependência entre módulos.
+
+
+
 ## Tecnologias e ferramentas
 
-Tem algumas coisas já instaladas, como o Gunicorn, Commitizen, Flask, Python Dotenv e alguns arquivos já configurados com os módulos de Blueprint, loggings, páginas para tratamento de erros, arquivos templates para issues e configurações para ambientes de desenvolvimento e produção.
+Tem algumas coisas já instaladas, como o gunicorn, commitizen, flask, python dotenv e alguns arquivos já configurados com os módulos de blueprint, loggings, páginas para tratamento de erros, arquivos templates para issues e configurações para ambientes de desenvolvimento e produção.
 
 ---
 
@@ -49,12 +55,12 @@ Execute o servidor de desenvolvimento:
 python run.py
 ```
 
-O projeto estará rodando em: <http://127.0.0.1:5000>
+O projeto estará rodando em <http://127.0.0.1:5000> (ou outro endereço indicado no terminal)
 
 ---
 
 ### Padrões de Commit
-Este projeto utiliza o Commitizen para garantir que o histórico do Git fique organizado.
+Este projeto utiliza o Commitizen para garantir que o histórico do Git fique organizado. Há uma configuração pronta no projeto nomeado como `.cz.toml` mas caso queira fazer suas regras, depois de baixar os requirements, apague o .cz.toml existente e configure outro para o seu ambiente, rode `cz init` no terminal.
 
 Para fazer um commit, em vez de usar `git commit -m "..."`, utilize:
 ```bash
